@@ -75,13 +75,29 @@ header a {
     margin-left: 50px;
 }
 
-
+#logIn {
+    width: 30px;
+    transform: translate(0, 8px);
+}
 
 .logosApps {
     width: 35px;
 }
 
 
+
+/* Animacion Subrayado Menu */
+.menu a {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s;
+}
+
+.menu a:hover, .menu a:focus {
+    background-size: 100% 1px;
+}
 
 
 /* Fin del Header.-------------------------- */
