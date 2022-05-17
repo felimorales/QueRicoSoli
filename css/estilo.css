@@ -1,0 +1,461 @@
+/* Fuentes. ---------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+/* font-family: 'Heebo', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+/* font-family: 'Oleo Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+/* font-family: 'Josefin Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+/* font-family: 'Kanit', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+/* font-family: 'Cookie', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+/* Fin Fuentes. ---------------------------- */
+
+/* Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Diseño general */
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*  Inicio del Header.---------------------- */
+header {
+    /* background-color: #FE9A2E; */
+    width: 100%;
+    margin-top: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+header li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.carrito {
+    text-align: end;
+    margin-right: 80px;
+}
+
+header a {
+    font-family: 'Oleo Script', cursive;
+    font-size: large;
+   
+}
+
+.navContacto {
+    margin-right: 15px;
+}
+
+#logoPrincipal {
+    width: 90px;
+    margin-left: 50px;
+}
+
+
+
+.logosApps {
+    width: 35px;
+}
+
+
+
+
+/* Fin del Header.-------------------------- */
+
+/*  Inicio del Footer.---------------------- */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 15px 0 15px;
+}
+
+.navFooter {
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-weight: bolder;
+    margin-left: 15px;
+}
+
+.navFooter li {
+    margin: 5px 0;
+}
+
+.logoFooter {
+    width: 80px;
+}
+
+.navContactoFooter {
+    text-align: right;
+    margin-right: 15px;
+}
+
+.navContactoFooter li {
+    display: inline-block;
+}
+
+.creador {
+    grid-area: creador;
+    text-align: center;
+    margin: 5px;
+    background-color: #FE9A2E;
+    font-size: 1.2rem;
+}
+
+/* Fin del Footer.-------------------------- */
+
+
+/* Inicio del Index.------------------------ */
+ .index {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer"
+    ;
+} 
+
+.mainIndex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    grid-area: main;
+}
+
+.portada {
+    width: 80%;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(../img/fotoanchacincoplatos.jpeg);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    border: #000 solid 1px;
+    margin: auto;
+    margin-top: 50px;
+    grid-area: portada;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.infoNosotros {
+    grid-area: info;
+    font-size: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+    font-family: 'Lobster', cursive;
+    margin-top: 50px;
+}
+
+.infoNosotros p {
+    font-family: 'Heebo', sans-serif;
+    margin: 20px auto 50px auto;
+    max-width: 90%;
+}
+/* Fin del Index.--------------------------- */
+
+/* Inicio de Platos.------------------------ */
+
+
+.navInterna li{
+    display: inline-block;
+}
+
+p {
+    display: inherit;
+}
+
+.navInterna {
+    text-align: center;
+    background-color: #E2E8CE;
+    padding: 20px;
+}
+
+.navInterna a, .navInterna p{
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;   
+    font-size: medium;
+    margin: 5px;
+}
+
+.plato {
+    width: 200px;
+    max-height: 150px;
+    max-width: 100%;
+    margin: 10px;  
+}
+
+.platos-padre {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.platos {
+    display: inline-block;
+    border: #000 2px solid;
+    border-radius: 4px;
+    padding-bottom: 30px;
+    max-width: 100%;
+}
+
+.platos p {
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-family: 'Cookie', cursive; 
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+h3 {
+    /* margin: 50px 0 20px 10px; */
+    padding: 40px 0 20px 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.comida h3 {
+    width: 90%;
+    margin: auto;
+    font-size: 4rem;
+}
+
+
+/* Fin de Platos.-------------------------- */
+
+/* Inicio Contacto.------------------------ */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+form {
+    border: #000 solid 2px;
+    border-radius: 4px;
+    width: 50vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.inputs label {
+    width: 220px;
+    margin: auto;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    max-width: 85%;
+
+}
+
+.campo {
+    display: block;
+    width: 200px;
+    max-width: 80%;
+    padding: 10px;
+    margin: auto;
+}
+
+textarea {
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 80%;
+}
+
+.botonForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.botonForm input {
+    margin: 5px;
+    width: 60px;
+    height: 22px;
+    background-image: linear-gradient(to right, #FE9A2E, #d27109);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    letter-spacing: .5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.botonForm input:hover {
+    transform: scale(1.1 , 1.1)
+}
+
+.botonForm input:active {
+    width: 60px;
+    height: 22px;
+}
+
+/* Fin Contacto.--------------------------- */
+
+/* Inicio Entregas.------------------------ */
+.infoEntregas ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoEntregas h3 {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.infoEntregas p {
+    font-size: 1.8rem;
+    margin-left: 30px;
+    font-family: 'Kanit', sans-serif; 
+}
+
+.infoEntregas li {
+    border: rgb(79, 79, 79) solid 2px;
+    border-radius: 4px;
+    width: 100vw;
+    max-width: 80%;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.mapa div {
+    padding: 2px;
+    border: #000 solid 3px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+iframe {
+    width: 600px;
+    height: 350px;
+}
+
+
+
+
+/* Fin Entregas.--------------------------- */
+
+/* Media Querys.--------------------------- */
+
+/* Vista Tablet */
+@media screen  and (max-width: 1024px) {
+    .mapa {
+        display: none;
+    }
+}
+
+/* Vista Mobile */
+
+@media screen  and (max-width: 768px) {
+   /* .navPrincipal {
+        display: none;
+    }*/
+    .navContacto {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    #logoPrincipal {
+        margin: 0;
+    }
+    .footer {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .navFooter, .imgFooter, .navContactoFooter {
+        margin: 10px 0;
+    }
+
+    form {
+        min-width: 80%;
+    }
+
+    .platosPadre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .comida {
+        border: none;
+    }
+}
