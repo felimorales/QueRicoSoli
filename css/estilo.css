@@ -430,6 +430,38 @@ iframe {
 
 /* Fin Entregas.--------------------------- */
 
+
+/* Inicio Preguntas.------------------------ */
+
+.preguntaTitulo {
+    text-align: left;
+    margin-left: 2vw;
+    padding-top: 10px;
+}
+
+.preguntaRespuesta {
+    font-size: 1.8rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-family: 'Kanit', sans-serif;
+}
+.preguntas li {
+    border: rgb(79, 79, 79) solid 2px;
+    border-radius: 4px;
+    width: 100vw;
+    max-width: 80%;
+    margin-top: 20px;
+    margin-left: 10vw;
+    padding-bottom: 10px;
+}
+
+/* Fin Preguntas.--------------------------- */
+
+
+
+
+
+
 /* Media Querys.--------------------------- */
 
 /* Vista Tablet */
