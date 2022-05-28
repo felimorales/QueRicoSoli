@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
     <title>Que Rico Soli</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/estilo.css">
-    
-    
+
+
 </head>
 
 <body class="index">
-    <header>
+    <header class="p-3 mb-3 border-bottom">
         <!-- Logo principal linkeado al inicio -->
-        <div class="logoPrincipal" >
+        <!-- <div class="logoPrincipal" >
             <a href="./index.html"><img src="./img/logo.jpg" id="logoPrincipal"  alt="Logo qrs"></a>
         </div>
-        
+         -->
+
+        <!-- Navegacion Boostrap -->
+
+        <nav class="navbar navbar-expand-lg  w-100">
+            <div class="container-fluid">
+                <!-- logo -->
+                <a class="navbar-brand col-lg-2 cl-md-2" href="#"><img src="./img/logo.jpg" id="logoPrincipal" alt="Logo qrs"></a>
+                <button class="navbar-toggler order-3 cl-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- menu -->
+                <div class="collapse navbar-collapse col-lg-6" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active menuLink" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menuLink" aria-current="page" href="#">Platos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menuLink" aria-current="page" href="#">Planes de Alimentacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menuLink" aria-current="page" href="#">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <!-- barra search -->
+                    <form class="d-flex col-lg-3" role="search">
+                        <input class="form-control me-2 buttonSearch" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success buttonSearch" type="submit">Search</button>
+                    </form>
+                </div>
+
+                <!-- boton log in -->
+                <div class="dropdown text-end col-lg-1 cl-md-5">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./img/login.png" id="logIn" alt="Log in">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                      <li><a class="dropdown-item" href="#">Carrito</a></li>
+                      <li><a class="dropdown-item" href="#">Perfil</a></li>
+                      <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </nav>
+
         <!--Navegacion Principal-->
-        <nav class="navPrincipal">
+        <!-- <nav class="navPrincipal">
             <ul class="carrito">
                 <li><img src="./img/login.png" id="logIn" alt="Log in"></li>
                 <li><a  href="./pages/carrito.html">Carrito</a></li>
@@ -30,16 +87,16 @@
                 <li><a href="./pages/planes-de-alimentacion.html">Planes de Alimentacion</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </nav> -->
 
         <!--Navegacion de contacto-->
-        <nav class="navContacto">
+        <!-- <nav class="navContacto">
             <ul>
                 <li><a href="https://www.facebook.com/QuericoSoli/" target="_blank"><img src="./img/facebook.png" class="logosApps"  alt="Logo fb"></a></li>
                 <li><a href="https://www.instagram.com/quericosoli/?hl=es" target="_blank"><img src="./img/instagram.png" class="logosApps"  alt="Logo ig"></a></li>
                 <li><a href="https://api.whatsapp.com/send?phone=+541162456018" target="_blank"><img src="./img/whatsapp.png" class="logosApps"  alt="Logo wpp"></a></li>
             </ul>
-        </nav>
+        </nav> -->
 
     </header>
 
@@ -53,7 +110,22 @@
         <section class="infoNosotros">
 
             <h1 class="nosotros">Nosotros</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo illum quasi corrupti voluptatibus. Sint reiciendis voluptates quis voluptas magnam molestiae quae reprehenderit voluptatum expedita optio aperiam culpa, ea illum commodi asperiores dolorem perferendis fugit! Ratione itaque ut voluptatem ipsum, saepe officia. Et officiis repellat necessitatibus voluptate impedit nemo nisi aliquam harum nesciunt velit, repudiandae tempore quaerat optio dignissimos eos corporis ut, ipsum alias fuga modi quam? Obcaecati, repellendus ex in suscipit quidem dicta aut rem quisquam vitae! Veritatis quis repellat mollitia possimus eius suscipit incidunt, quidem illum tenetur sapiente pariatur accusantium voluptates perspiciatis iste aspernatur culpa delectus, deleniti magni autem amet quaerat accusamus sed. Nesciunt repellendus eligendi officiis impedit iste, aperiam quam vitae, similique qui, rerum suscipit consequatur. Saepe eius possimus assumenda aliquam nihil illo minima facilis repellat aliquid eum! Nulla cupiditate, doloribus vero voluptatibus natus asperiores commodi facere ipsam quod similique ex pariatur magni dolorem iure veritatis maxime vel. Numquam aperiam ut quisquam modi animi itaque veritatis quia dolores commodi. Error perferendis asperiores iure. Veniam, quo beatae temporibus culpa amet, quos a iusto nesciunt quibusdam delectus sint itaque esse? Unde animi dolore perferendis aut soluta quas facilis error sunt voluptate et laudantium sed quam culpa, tenetur id iusto exercitationem, modi facere velit. </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo illum quasi corrupti voluptatibus.
+                Sint reiciendis voluptates quis voluptas magnam molestiae quae reprehenderit voluptatum expedita optio
+                aperiam culpa, ea illum commodi asperiores dolorem perferendis fugit! Ratione itaque ut voluptatem
+                ipsum, saepe officia. Et officiis repellat necessitatibus voluptate impedit nemo nisi aliquam harum
+                nesciunt velit, repudiandae tempore quaerat optio dignissimos eos corporis ut, ipsum alias fuga modi
+                quam? Obcaecati, repellendus ex in suscipit quidem dicta aut rem quisquam vitae! Veritatis quis repellat
+                mollitia possimus eius suscipit incidunt, quidem illum tenetur sapiente pariatur accusantium voluptates
+                perspiciatis iste aspernatur culpa delectus, deleniti magni autem amet quaerat accusamus sed. Nesciunt
+                repellendus eligendi officiis impedit iste, aperiam quam vitae, similique qui, rerum suscipit
+                consequatur. Saepe eius possimus assumenda aliquam nihil illo minima facilis repellat aliquid eum! Nulla
+                cupiditate, doloribus vero voluptatibus natus asperiores commodi facere ipsam quod similique ex pariatur
+                magni dolorem iure veritatis maxime vel. Numquam aperiam ut quisquam modi animi itaque veritatis quia
+                dolores commodi. Error perferendis asperiores iure. Veniam, quo beatae temporibus culpa amet, quos a
+                iusto nesciunt quibusdam delectus sint itaque esse? Unde animi dolore perferendis aut soluta quas
+                facilis error sunt voluptate et laudantium sed quam culpa, tenetur id iusto exercitationem, modi facere
+                velit. </p>
 
         </section>
 
@@ -76,9 +148,12 @@
 
             <nav class="navContactoFooter">
                 <ul>
-                    <li><a href="https://www.facebook.com/QuericoSoli/" target="_blank"><img src="./img/facebook.png" class="logosApps" alt="Logo fb"></a></li>
-                    <li><a href="https://www.instagram.com/quericosoli/?hl=es" target="_blank"><img src="./img/instagram.png" class="logosApps" alt="Logo ig"></a></li>
-                    <li><a href="https://api.whatsapp.com/send?phone=+541162456018" target="_blank"><img src="./img/whatsapp.png" class="logosApps" alt="Logo wpp"></a></li>
+                    <li><a href="https://www.facebook.com/QuericoSoli/" target="_blank"><img src="./img/facebook.png"
+                                class="logosApps" alt="Logo fb"></a></li>
+                    <li><a href="https://www.instagram.com/quericosoli/?hl=es" target="_blank"><img
+                                src="./img/instagram.png" class="logosApps" alt="Logo ig"></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=+541162456018" target="_blank"><img
+                                src="./img/whatsapp.png" class="logosApps" alt="Logo wpp"></a></li>
                 </ul>
             </nav>
         </section>
@@ -86,9 +161,12 @@
         <section class="creador">
             <p>Sitio Web creado por <strong>Felipe M.</strong></p>
         </section>
-        
-    </footer>
 
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
