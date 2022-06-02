@@ -1,0 +1,11 @@
+@mixin fotoPlato {
+    width: 200px;
+    max-height: 150px;
+    max-width: 100%;
+    margin: 10px;
+}
+
+@mixin parrafos {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
