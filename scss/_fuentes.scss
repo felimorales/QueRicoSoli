@@ -1,0 +1,55 @@
+/* Fuentes. ---------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+/* font-family: 'Heebo', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+/* font-family: 'Oleo Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+
+/* font-family: 'Josefin Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+/* font-family: 'Kanit', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+/* font-family: 'Cookie', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+/* Fin Fuentes. ---------------------------- */
+
+h2 {
+    margin-bottom: 10px;
+    font-family: 'Cookie', cursive;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  
+  h3 {
+    /* margin: 50px 0 20px 10px; */
+    padding: 40px 0 20px 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .comida h3 {
+    width: 90%;
+    margin: auto;
+    font-size: 4rem;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #000;
+    font-family: 'Lobster', cursive;
+    margin-top: 50px;
+  }
