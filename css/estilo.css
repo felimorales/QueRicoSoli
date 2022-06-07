@@ -175,9 +175,6 @@ header ul {
 .navInterna li {
   display: inline-block; }
 
-p {
-  display: inherit; }
-
 .navInterna {
   text-align: center;
   background-color: #E2E8CE;
@@ -359,6 +356,37 @@ iframe {
   padding-bottom: 10px; }
 
 /* Fin Preguntas.--------------------------- */
+/* Inicio Carrito.------------------------ */
+.carrito {
+  display: grid;
+  grid-template-areas: "productos productos costo" "productos productos costo"; }
+
+.productosAgregados, .costo {
+  border: #000 2px solid;
+  border-radius: 4px;
+  width: 70vw;
+  height: 300px;
+  grid-area: productos;
+  display: inline-block;
+  margin-left: 20px; }
+
+.costo {
+  width: 20vw;
+  grid-area: costo; }
+
+.productoCarrito {
+  display: flex;
+  margin: 10px 60px 20px 10px;
+  justify-content: space-between; }
+  .productoCarrito p {
+    display: inline-block !important; }
+  .productoCarrito img {
+    display: inline-block !important; }
+
+.imgCarrito {
+  width: 100px; }
+
+/* Fin Carrito.--------------------------- */
 /* Media Querys.--------------------------- */
 /* Vista Tablet */
 @media screen and (max-width: 1024px) {

@@ -20,24 +20,29 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
     <header class="p-3 border-bottom">
+
         <!-- Navegacion Boostrap -->
 
         <nav class="navbar navbar-expand-lg  w-100">
             <div class="container-fluid">
-                <!-- logo -->
-                <a class="navbar-brand col-lg-2 cl-md-2" href="../index.html"><img src="../img/logo.jpg" id="logoPrincipal" alt="Logo qrs"></a>
-                <button class="navbar-toggler order-3 cl-md-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+
+                <button class="navbar-toggler cl-md-5 " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+                <!-- logo -->
+                <a class="navbar-brand col-lg-2 cl-md-2 " href="../index.html"><img src="../img/logo.jpg"
+                        id="logoPrincipal" alt="Logo qrs"></a>
+
+
                 <!-- menu -->
                 <div class="collapse navbar-collapse col-lg-6" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0  " style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
                             <a class="nav-link active menuLink" aria-current="page" href="../index.html">Inicio</a>
                         </li>
@@ -45,7 +50,8 @@
                             <a class="nav-link active menuLink" aria-current="page" href="platos.html">Platos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active menuLink" aria-current="page" href="planes-de-alimentacion.html">Planes de Alimentacion</a>
+                            <a class="nav-link active menuLink" aria-current="page"
+                                href="planes-de-alimentacion.html">Planes de Alimentacion</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active menuLink" aria-current="page" href="contacto.html">Contacto</a>
@@ -54,31 +60,51 @@
 
                     <!-- barra search -->
                     <form class="d-flex col-lg-3" role="search">
-                        <input class="form-control me-2 buttonSearch" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2 buttonSearch" type="search" placeholder="Search"
+                            aria-label="Search">
                         <button class="btn btn-outline-success buttonSearch" type="submit">Search</button>
                     </form>
                 </div>
 
                 <!-- boton log in -->
-                <div class="dropdown text-end col-lg-1 cl-md-5">
-                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="../img/login.png" id="logIn" alt="Log in">
+                <div class="dropdown text-end col-lg-1 cl-md-5 ">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../img/login.png" id="logIn" alt="Log in">
                     </a>
                     <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-                      <li><a class="dropdown-item" href="carrito.html">Carrito</a></li>
-                      <li><a class="dropdown-item" href="#">Perfil</a></li>
-                      <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        <li><a class="dropdown-item" href="carrito.html">Carrito</a></li>
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
                     </ul>
-                  </div>
+                </div>
             </div>
         </nav>
 
     </header>
 
     <main>
-        <!-- ARMAR CARRITO DE COMPRAS -->
+        <!-- ARMAR CARRITO DE COMPRAS CON JAVA SCRIPT -->
         <h2>Carrito de compras</h2>
+        <section class="carrito">
+            <section class="productosAgregados">
+                <div class="productoCarrito">
+                    <img class="imgCarrito" src="../img/carne4.jpeg" alt="nombre del plato">
+                    <p>nombre del plato</p>
+                    <p>cantidad</p>
+                    <p>precio</p>
+                </div>
+                <div class="productoCarrito">
+                    <img class="imgCarrito" src="../img/vegie2.jpeg" alt="nombre del plato">
+                    <p>nombre del plato</p>
+                    <p>cantidad</p>
+                    <p>precio</p>
+                </div>
+            </section>
+            <aside class="costo">
 
+            </aside>
+        </section>
 
     </main>
 

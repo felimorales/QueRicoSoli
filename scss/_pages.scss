@@ -42,9 +42,7 @@
   display: inline-block;
 }
 
-p {
-  display: inherit;
-}
+
 
 .navInterna {
   text-align: center;
@@ -261,3 +259,51 @@ iframe {
 }
 
 /* Fin Preguntas.--------------------------- */
+
+/* Inicio Carrito.------------------------ */
+.carrito {
+  display: grid;
+  grid-template-areas: 
+  "productos productos costo"
+  "productos productos costo"
+  ;
+}
+
+.productosAgregados {
+  border: #000 2px solid;
+  border-radius: $radio;
+  width: 70vw;
+  height: 300px;
+  grid-area: productos;
+  display: inline-block;
+  margin-left: 20px
+}
+
+.costo {
+  @extend .productosAgregados;
+  width: 20vw;
+  grid-area: costo;
+
+
+}
+
+.productoCarrito {
+  display: flex;
+  margin: 10px 60px 20px 10px;
+  justify-content: space-between;
+
+  p {
+    display: inline-block !important;
+  }
+  img {
+    display: inline-block !important;
+  }
+}
+
+.imgCarrito {
+  width: 100px;
+} 
+
+
+
+/* Fin Carrito.--------------------------- */
