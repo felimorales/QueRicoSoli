@@ -1,260 +1,263 @@
-
 /* Inicio del Index.------------------------ */
 
 
-  
-.mainIndex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .portada {
-    width: 80%;
-    height: 300px;
-    overflow: hidden;
-    background-image: url(../img/fotoanchacincoplatos.jpeg);
-    background-position: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    border: #000 solid 1px;
-    margin: auto;
-    margin-top: 50px;
-  }
-  
-  .infoNosotros {
-    font-size: 1.5rem;
-  }
-  
-  .infoNosotros p {
-    font-family: 'Heebo', sans-serif;
-    margin: 20px auto 50px auto;
-    max-width: 90%;
-  }
-  
-  /* Fin del Index.--------------------------- */
-  
-  /* Inicio de Platos.------------------------ */
-  
-  .navInterna li {
-    display: inline-block;
-  }
-  
-  p {
-    display: inherit;
-  }
-  
-  .navInterna {
-    text-align: center;
-    background-color: #E2E8CE;
-    padding: 20px;
-  
-    a, p {
-      text-decoration: none;
-      color: black;
-      font-family: 'Poppins', sans-serif;
-      font-weight: bold;
-      font-size: medium;
-      margin: 5px;
-    }
-  }
-  
-  .plato {
-    @include fotoplato;
-  }
-  
-  .platos-padre {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    margin: auto;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .platos {
-    display: inline-block;
-    border: #000 2px solid;
-    border-radius: $radio;
-    padding-bottom: 30px;
-    max-width: 100%;
-  
-    p {
-      display: block;
-      text-align: center;
-      color: #000;
-      font-weight: bolder;
-      margin-top: 10px;
-      @include parrafos;
-    }
-  }
-  
 
-  
-  /* Fin de Platos.-------------------------- */
-  
-  /* Inicio Contacto.------------------------ */
-  
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.mainIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.portada {
+  width: 90%;
+  height: 300px;
+  overflow: hidden;
+  background-image: url(../img/fotoanchacincoplatos.jpeg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  border: #000 solid 1px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.infoNosotros {
+  font-size: 1.5rem;
+}
+
+.infoNosotros p {
+  font-family: 'Heebo', sans-serif;
+  text-align: center;
+  margin: 20px auto 50px auto;
+  max-width: 90%;
+}
+
+/* Fin del Index.--------------------------- */
+
+/* Inicio de Platos.------------------------ */
+
+.navInterna li {
+  display: inline-block;
+}
+
+p {
+  display: inherit;
+}
+
+.navInterna {
+  text-align: center;
+  background-color: #E2E8CE;
+  padding: 20px;
+
+  a,
+  p {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    margin: 5px;
   }
-  
-  .formContacto {
-    border: #000 solid 2px;
-    border-radius: $radio;
-    width: 50vw;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+}
+
+
+.plato {
+  @include fotoplato;
+}
+
+.platos-padre {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.platos {
+  border: #000 2px solid;
+  border-radius: $radio;
+  padding-bottom: 30px;
+  max-width: 100%;
+  text-align: center;
+
+  p {
+    @include parrafos;
+    color: map-get($estiloplato , color );
+    font-family: map-get($estiloplato , fuente );
+    font-weight: bolder;
+    margin-top: 10px;
   }
-  
-  .inputs {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 1rem;
-    margin-top: 20px;
-  
-    label {
-      width: 220px;
-      margin: auto;
-      margin-top: 10px;
-      max-width: 85%;
-      @include parrafos;
-    }
-  }
-  
-  .campo {
-    display: block;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+
+/* Fin de Platos.-------------------------- */
+
+/* Inicio Contacto.------------------------ */
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.formContacto {
+  border: #000 solid 2px;
+  border-radius: $radio;
+  width: 50vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  margin-top: 20px;
+
+  label {
     width: 220px;
-    max-width: 80%;
-    padding: 10px;
     margin: auto;
-    border: none;
-    border-bottom: gray solid 1px;
-  }
-  
-  textarea {
-    width: 300px;
-    margin: 20px auto;
-    padding: 10px;
-    max-width: 80%;
-  }
-  
-  .botonForm {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-  
-    input {
-      margin: 5px;
-      width: 60px;
-      height: 22px;
-      background-image: linear-gradient(to right, #FE9A2E, #d27109);
-      border: none;
-      border-radius: $radio;
-      color: #fff;
-      letter-spacing: .5px;
-      cursor: pointer;
-      transition: all 0.3s;
-  
-      &:hover {
-        transform: scale(1.1, 1.1);
-      }
-  
-      &:active {
-        transform: scale(0.5, 0.5);
-      }
-    }
-  }
-  
-  /* Fin Contacto.--------------------------- */
-  
-  /* Inicio Entregas.------------------------ */
-  
-  .infoEntregas {
-    ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    h3 {
-      text-align: left;
-      margin-left: 10px;
-      margin-top: 5px;
-      margin-bottom: 10px;
-      padding: 0;
-    }
-  
-    p {
-      margin-left: 30px;
-      @include parrafos;
-    }
-  
-    li {
-      border: rgb(79, 79, 79) solid 2px;
-      border-radius: $radio;
-      width: 100vw;
-      max-width: 80%;
-      margin-top: 30px;
-      padding-bottom: 10px;
-    }
-  }
-  
-  .mapa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0;
-  
-    div {
-      padding: 2px;
-      border: #000 solid 3px;
-      border-radius: $radio;
-      display: inline-block;
-    }
-  }
-  
-  iframe {
-    width: 600px;
-    height: 350px;
-  }
-  
-  /* Fin Entregas.--------------------------- */
-  
-  /* Inicio Preguntas.------------------------ */
-  
-  .preguntaTitulo {
-    text-align: left;
-    margin-left: 2vw;
-    padding-top: 10px;
-  }
-  
-  .preguntaRespuesta {
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-top: 10px;
+    max-width: 85%;
     @include parrafos;
   }
-  
-  .preguntas li {
+}
+
+.campo {
+  display: block;
+  width: 220px;
+  max-width: 80%;
+  padding: 10px;
+  margin: auto;
+  border: none;
+  border-bottom: gray solid 1px;
+}
+
+textarea {
+  width: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 80%;
+}
+
+.botonForm {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  input {
+    margin: 5px;
+    width: 60px;
+    height: 22px;
+    background-image: linear-gradient(to right, #FE9A2E, $colorqrs);
+    border: none;
+    border-radius: $radio;
+    color: #fff;
+    letter-spacing: .5px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
+
+    &:active {
+      transform: scale(0.5, 0.5);
+    }
+  }
+}
+
+/* Fin Contacto.--------------------------- */
+
+/* Inicio Entregas.------------------------ */
+
+.infoEntregas {
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h3 {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  p {
+    margin-left: 30px;
+    @include parrafos;
+  }
+
+  li {
     border: rgb(79, 79, 79) solid 2px;
     border-radius: $radio;
     width: 100vw;
     max-width: 80%;
-    margin-top: 20px;
-    margin-left: 10vw;
+    margin-top: 30px;
     padding-bottom: 10px;
   }
-  
-  /* Fin Preguntas.--------------------------- */
-  
-  
+}
+
+.mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+
+  div {
+    padding: 2px;
+    border: #000 solid 3px;
+    border-radius: $radio;
+    display: inline-block;
+  }
+}
+
+iframe {
+  width: 600px;
+  height: 350px;
+}
+
+/* Fin Entregas.--------------------------- */
+
+/* Inicio Preguntas.------------------------ */
+
+.preguntaTitulo {
+  text-align: left;
+  margin-left: 2vw;
+  padding-top: 10px;
+}
+
+.preguntaRespuesta {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  @include parrafos;
+}
+
+.preguntas li {
+  border: rgb(79, 79, 79) solid 2px;
+  border-radius: $radio;
+  width: 100vw;
+  max-width: 80%;
+  margin-top: 20px;
+  margin-left: 10vw;
+  padding-bottom: 10px;
+}
+
+/* Fin Preguntas.--------------------------- */
