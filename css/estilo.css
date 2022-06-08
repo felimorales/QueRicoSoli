@@ -210,7 +210,8 @@ p {
   border-radius: 4px;
   padding-bottom: 30px;
   max-width: 100%;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 0px 5px 9px 2px rgba(0, 0, 0, 0.81); }
   .platos p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
@@ -219,9 +220,14 @@ p {
     font-family: "Poppins";
     font-weight: bolder;
     margin-top: 10px; }
+  .platos:hover {
+    transform: scale(1.02, 1.02); }
 
 .btn:hover {
   color: #fff; }
+
+#navbarScroll {
+  text-align: left; }
 
 /* Fin de Platos.-------------------------- */
 /* Inicio Contacto.------------------------ */
