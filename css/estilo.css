@@ -16,6 +16,8 @@
 /* font-family: 'Poppins', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 /* font-family: 'Roboto', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap");
+/*font-family: 'Noto Sans', sans-serif;*/
 /* Fin Fuentes. ---------------------------- */
 h1, h2, h3 {
   text-align: center;
@@ -32,6 +34,9 @@ h2 {
 h3 {
   margin: 40px auto 20px auto;
   font-size: 1.8rem; }
+
+h5 {
+  font-size: 1.6rem; }
 
 .fotosPlatos h3 {
   width: 90%;
@@ -165,10 +170,16 @@ header ul {
   font-size: 1.5rem; }
 
 .infoNosotros p {
-  font-family: 'Heebo', sans-serif;
-  text-align: left;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: justify;
   margin: 0px auto 0px auto;
-  max-width: 90%; }
+  max-width: 70%;
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: bolder; }
+
+p + p {
+  text-indent: 0.5em; }
 
 .bienvenidos {
   margin-top: 20px !important; }
@@ -360,6 +371,9 @@ iframe {
   font-size: 1.5rem;
   /*text-align: center;*/ }
 
+.preguntas h3 {
+  margin-top: 20px; }
+
 .preguntas li {
   border: #4f4f4f solid 2px;
   border-radius: 4px;
@@ -370,7 +384,6 @@ iframe {
   padding-bottom: 10px; }
 
 /* Fin Preguntas.--------------------------- */
-/* Inicio Carrito.------------------------ */
 .carrito {
   display: grid;
   grid-template-areas: "productos productos costo" "productos productos costo"; }
@@ -401,6 +414,22 @@ iframe {
   width: 100px; }
 
 /* Fin Carrito.--------------------------- */
+/* Inicio Planes.------------------------ */
+.dietas {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 150px; }
+  .dietas h4 {
+    font-size: 1.8rem; }
+  .dietas p {
+    font-size: 1.6rem;
+    font-family: 'Noto Sans', sans-serif;
+    color: #000;
+    font-weight: bolder; }
+  .dietas li {
+    list-style-type: square; }
+
+/* Fin Planes.--------------------------- */
 /* Media Querys.--------------------------- */
 /* Vista Tablet */
 @media screen and (max-width: 1024px) {
